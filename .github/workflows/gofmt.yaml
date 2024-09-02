@@ -1,0 +1,24 @@
+name: 'Check code formatting using gofmt'
+author: 'Jérôme Pogeant'
+description: 'Check code formatting using gofmt'
+inputs:
+  gofmt-path:
+    description: 'Path used by gofmt command'
+    required: false
+    default: './*'
+  gofmt-flags:
+    description: "Flags to pass to gofmt, e.g. -d or -l"
+    required: false
+    default: '-l'
+outputs:
+  gofmt-output:
+    description: 'The gofmt output if the command fail'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.gofmt-path }}
+    - ${{ inputs.gofmt-flags }}
+branding:
+  icon: 'check-circle'
+  color: 'green'
