@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   run-linters:
-    name: Run linters (Go)
+    name: Run linters (Go, Prettier)
     runs-on: ubuntu-latest
 
     steps:
@@ -33,3 +33,4 @@ jobs:
         with:
           # Enable your linters here
           gofmt: true
+          prettier: true
