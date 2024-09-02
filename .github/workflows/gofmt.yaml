@@ -1,0 +1,14 @@
+name: GoFormat
+
+on:
+  push:
+    branches: ['gofmt']
+  pull_request:
+
+jobs:
+  gofmt:
+    runs-on: ubuntu-latest
+    name: GoFormat
+    steps:
+      - name: Check code formatting using gofmt
+        uses: Jerome1337/gofmt-action@v1.0.5
