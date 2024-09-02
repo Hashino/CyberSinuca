@@ -1,10 +1,14 @@
 repos:
-   - repo: https://github.com/opensource-nepal/commitlint
-     rev: v1.2.0
-     hooks:
-       - id: commitlint
-
-   - repo: https://github.com/tekwizely/pre-commit-golang
-     rev: v1.0.0-rc.1
-     hooks:
-       - id: go-fmt
+  - repo: https://github.com/opensource-nepal/commitlint
+    rev: v1.2.0
+    hooks:
+      - id: commitlint
+  - repo: https://github.com/tekwizely/pre-commit-golang
+    rev: v1.0.0-rc.1
+    hooks:
+      - id: go-fmt
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0 # Use the ref you want to point at
+    hooks:
+      - id: no-commit-to-branch
+        args: [--branch, main]
