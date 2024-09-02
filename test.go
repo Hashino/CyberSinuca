@@ -1,17 +1,10 @@
 package main
 
 // still wrong
-             import "fmt"
+import "fmt"
 
-func main() { var a = "aa";
+func main() {
+	var a = "aa"
 
-
-
-
-
-
-
-
-
-
-fmt.Println(a) }
+	fmt.Println(a)
+}
