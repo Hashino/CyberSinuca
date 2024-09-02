@@ -3,3 +3,8 @@ repos:
      rev: v1.2.0
      hooks:
        - id: commitlint
+
+   - repo: https://github.com/tekwizely/pre-commit-golang
+     rev: v1.0.0-rc.1
+     hooks:
+       - id: go-fmt
