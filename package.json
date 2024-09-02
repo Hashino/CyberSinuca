@@ -1,0 +1,22 @@
+{
+  "name": "cybersinuca",
+  "version": "1.0.0",
+  "description": "Sinuca DAICEx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hashino/CyberSinuca.git"
+  },
+  "author": "Hashino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hashino/CyberSinuca/issues"
+  },
+  "homepage": "https://github.com/Hashino/CyberSinuca#readme",
+  "dependencies": {
+    "prettier": "^3.3.3"
+  }
+}
