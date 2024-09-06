@@ -1,0 +1,9 @@
+{
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always",
+      "source.sortImports": "always"
+    }
+  },
+  "editor.formatOnSave": true
+}
