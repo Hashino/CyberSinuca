@@ -16,11 +16,9 @@ const HistoryCard: React.FC<HistoryCardProps> = ({ matches }) => {
         </div>
         <span className="font-bold text-dark-2 dark:text-light">ÚLTIMAS PARTIDAS</span>
       </div>
-
       {matches.map((match, index) => (
         <HistoryContent key={index} match={match} />
       ))}
-
       <BottomCard path="/matches" />
     </div>
   );

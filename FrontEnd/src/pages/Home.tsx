@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import HistoryCard from '../components/cards/HistoryCard';
 import RankingCard from '../components/cards/RankingCard';
 import RegisterMatchButton from '../components/RegisterMatchButton';
@@ -6,21 +6,46 @@ import RegisterMatchModal from '../components/RegisterMatchModal';
 import { useUsercontext } from '../context/userContext';
 import BasicLayout from '../layout/BasicLayout';
 import { MatchType } from '../types/match';
-import { UserType } from '../types/user';
+import { UserType, testUser } from '../types/user';
 
 const Options: UserType[] = [
-  { id: 1, username: 'Natan' },
-  { id: 2, username: 'Iam' },
-  { id: 3, username: 'Samuel' },
-  { id: 4, username: 'Gabriel' },
+  {
+    id: 1,
+    username: 'Natan',
+    defeats: 4,
+    victories: 6,
+    rating: 960,
+    name: 'Algum Nome',
+    imgUrl: '/images/profilePicSample2.png',
+  },
+  {
+    id: 2,
+    username: 'Iam',
+    defeats: 4,
+    victories: 6,
+    rating: 960,
+    name: 'Algum Nome',
+    imgUrl: '/images/profilePicSample2.png',
+  },
+  {
+    id: 3,
+    username: 'Samuel',
+    defeats: 4,
+    victories: 6,
+    rating: 960,
+    name: 'Algum Nome',
+    imgUrl: '/images/profilePicSample2.png',
+  },
+  {
+    id: 4,
+    username: 'Gabriel',
+    defeats: 4,
+    victories: 6,
+    rating: 960,
+    name: 'Algum Nome',
+    imgUrl: '/images/profilePicSample2.png',
+  },
 ];
-
-const testUser: UserType = {
-  id: 5,
-  username: 'Junior',
-  imgUrl: 'src/assets/ef4d8a41160c4966a88013d6a83664d6.jpg',
-  rating: 950,
-};
 
 const testMatch: MatchType = {
   winner: testUser,
@@ -33,7 +58,7 @@ const testMatch: MatchType = {
 const Home: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const userContext = useUsercontext();
-  const { login, user } = userContext;
+  const { user } = userContext;
 
   const testMatches: MatchType[] = [testMatch, testMatch, testMatch];
   const testUsers: UserType[] = [];
@@ -42,13 +67,6 @@ const Home: React.FC = () => {
     testUsers.push(user);
     testUsers.push(user);
   }
-
-  useEffect(() => {
-    if (!user) {
-      login(testUser); //fake login for testing
-    }
-    console.log(user);
-  }, []);
 
   return (
     <BasicLayout authenticated={true}>

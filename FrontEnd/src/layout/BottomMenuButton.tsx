@@ -1,14 +1,20 @@
 import { Link } from 'react-router-dom';
+import { ForwardRefExoticComponent } from 'react';
+
+interface IconProps {
+  size?: number | string;
+}
+
 interface Props {
-  Icon: React.FC<{ size: number }>;
+  Icon: ForwardRefExoticComponent<IconProps>;
   path: string;
 }
 
-const BottomMenuButton: React.FC<Props> = (props: Props) => {
+const BottomMenuButton: React.FC<Props> = ({ Icon, path }) => {
   return (
-    <Link to={props.path}>
+    <Link to={path}>
       <div className="flex items-center py-4 text-dark-1 hover:text-pink active:text-pink dark:text-gray-1 dark:hover:text-light-blue dark:active:text-light-blue">
-        <props.Icon size={24} />
+        <Icon size={24} />
       </div>
     </Link>
   );

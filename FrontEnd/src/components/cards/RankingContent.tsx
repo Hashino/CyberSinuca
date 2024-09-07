@@ -25,8 +25,8 @@ const RankingContent: React.FC<RankingContentProps> = ({ user, position }) => {
         </span>
         <span className="font-medium text-gray-3 dark:text-gray-1">{user.username}</span>
       </div>
-      <div>
-        <span className="font-bold text-dark-3 dark:text-light">{user.rating}</span>
+      <div className="pr-2">
+        <span className="text-sm font-bold text-dark-3 dark:text-light">{user.rating}</span>
       </div>
     </div>
   );

@@ -14,7 +14,9 @@ const layout: React.FC<LayoutProps> = ({ children, authenticated }) => {
         <Sidebar />
         <div className="flex h-screen max-h-screen w-full flex-col">
           <MobileHeader authenticated={authenticated} />
-          <div className="h-full w-full overflow-y-auto max-sm:mb-14 max-sm:mt-12">{children}</div>
+          <div className="relative h-full w-full overflow-y-auto max-sm:mb-14 max-sm:mt-12">
+            {children}
+          </div>
           <BottomMenu />
         </div>
       </div>

@@ -54,7 +54,9 @@ const UserSelection: React.FC<ComboboxProps> = ({
               <div className="flex items-center px-1">
                 <div className="flex h-full w-full items-center gap-2 rounded-md px-2 py-2 transition hover:cursor-pointer hover:bg-gray-1 hover:dark:bg-dark-1">
                   <Check size={16} className="invisible group-data-[selected]:visible" />
-                  <span className="h-6 w-6 rounded-sm bg-gray-2"></span>
+                  <span className="h-6 w-6 overflow-hidden rounded-sm bg-gray-2">
+                    <img src={search.imgUrl} alt="userPicture" className="object-cover" />
+                  </span>
                   <span className="text-sm font-light group-data-[selected]:font-semibold group-data-[selected]:text-dark-3 dark:group-data-[selected]:text-light">
                     {search.username}
                   </span>
