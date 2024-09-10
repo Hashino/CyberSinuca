@@ -5,55 +5,8 @@ import RegisterMatchButton from '../components/RegisterMatchButton';
 import RegisterMatchModal from '../components/RegisterMatchModal';
 import { useUsercontext } from '../context/userContext';
 import BasicLayout from '../layout/BasicLayout';
-import { MatchType } from '../types/match';
-import { UserType, testUser } from '../types/user';
-
-const Options: UserType[] = [
-  {
-    id: 1,
-    username: 'Natan',
-    defeats: 4,
-    victories: 6,
-    rating: 960,
-    name: 'Algum Nome',
-    imgUrl: '/images/profilePicSample2.png',
-  },
-  {
-    id: 2,
-    username: 'Iam',
-    defeats: 4,
-    victories: 6,
-    rating: 960,
-    name: 'Algum Nome',
-    imgUrl: '/images/profilePicSample2.png',
-  },
-  {
-    id: 3,
-    username: 'Samuel',
-    defeats: 4,
-    victories: 6,
-    rating: 960,
-    name: 'Algum Nome',
-    imgUrl: '/images/profilePicSample2.png',
-  },
-  {
-    id: 4,
-    username: 'Gabriel',
-    defeats: 4,
-    victories: 6,
-    rating: 960,
-    name: 'Algum Nome',
-    imgUrl: '/images/profilePicSample2.png',
-  },
-];
-
-const testMatch: MatchType = {
-  winner: testUser,
-  loser: Options[0],
-  date: new Date(),
-  matchType: 1,
-  matchResult: 1,
-};
+import { MatchType, testMatch } from '../types/match';
+import { UserType, Options } from '../types/user';
 
 const Home: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);

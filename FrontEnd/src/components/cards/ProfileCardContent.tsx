@@ -8,7 +8,6 @@ interface ProfileCardContentProps {
 }
 
 const ProfileCardContent: React.FC<ProfileCardContentProps> = ({ user, lastMatch }) => {
-  console.log(lastMatch.date.toDateString());
   return (
     <div className="flex w-full flex-wrap items-center justify-between gap-4 text-gray-3 dark:text-gray-1">
       <div className="group relative flex flex-col items-center gap-1 py-2">
@@ -39,7 +38,8 @@ const ProfileCardContent: React.FC<ProfileCardContentProps> = ({ user, lastMatch
         <History size={40} />
         {user && (
           <span className="text-sm font-semibold">
-            {lastMatch.date.getDate().toString()}/{lastMatch.date.getMonth() + 1}/
+            {lastMatch.date.getDate().toString().padStart(2, '0')}/
+            {(lastMatch.date.getMonth() + 1).toString().padStart(2, '0')}/
             {lastMatch.date.getFullYear()}
           </span>
         )}

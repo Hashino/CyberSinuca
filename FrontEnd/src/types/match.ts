@@ -1,4 +1,4 @@
-import { UserType, testUser } from "./user";
+import { UserType, testUser, Options } from "./user";
 
 export interface MatchType {
     winner: UserType;
@@ -8,10 +8,10 @@ export interface MatchType {
     matchResult?: number;
 };
 
-export const testMatch : MatchType = {
+export const testMatch: MatchType = {
     winner: testUser,
-    loser: testUser,
+    loser: Options[0],
     date: new Date(),
-    matchResult: 1,
     matchType: 1,
-}
+    matchResult: 0,
+  };

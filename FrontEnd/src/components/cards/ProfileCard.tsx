@@ -18,10 +18,10 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ user }) => {
 
             <div className="flex h-40 w-full flex-col justify-between px-8 py-1">
               <div className="">
-                <h1 className="text-2xl font-extrabold dark:text-light max-md:text-lg max-sm:text-base">
+                <h1 className="text-2xl font-extrabold text-dark-3 dark:text-light max-md:text-lg max-sm:text-base">
                   {user.username}
                 </h1>
-                <h2 className="pt-2 text-lg font-extralight dark:text-gray-1 max-md:text-sm">
+                <h2 className="pt-2 text-lg font-extralight text-dark-2 dark:text-gray-1 max-md:text-sm">
                   {user.name}
                 </h2>
               </div>

@@ -5,8 +5,8 @@ import HistoryMatches from './pages/HistoryMatches';
 import Home from './pages/Home';
 import Ranking from './pages/Ranking';
 import UserProfile from './pages/UserProfile';
-
-//const AuthenticatedUser = createContext<UserContextProps | undefined>(undefined);
+import PushNotificationCard from './components/cards/PushNotificationCard';
+import { testMatch } from './types/match';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
+      <PushNotificationCard match={testMatch} />
     </UserProvider>
   );
 }
