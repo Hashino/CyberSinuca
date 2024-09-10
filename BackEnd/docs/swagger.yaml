@@ -1,0 +1,114 @@
+definitions:
+  match.Match:
+    properties:
+      loserId:
+        type: integer
+      winnerId:
+        type: integer
+    type: object
+  player.Player:
+    properties:
+      elo:
+        type: integer
+      id:
+        type: integer
+      matches:
+        items:
+          $ref: '#/definitions/match.Match'
+        type: array
+      name:
+        type: string
+    type: object
+externalDocs:
+  description: OpenAPI
+  url: https://swagger.io/resources/open-api/
+host: localhost:6969
+info:
+  contact: {}
+  title: CyberSinuca API
+  version: 0.0.1
+paths:
+  /history:
+    get:
+      consumes:
+      - application/json
+      description: get all players history
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/match.Match'
+            type: array
+      summary: Get all players history
+  /history/{name}:
+    get:
+      consumes:
+      - application/json
+      description: get specified player history
+      parameters:
+      - description: Player Name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/match.Match'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+      summary: Get player history by name
+  /player:
+    get:
+      consumes:
+      - application/json
+      description: get players
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/player.Player'
+            type: array
+      summary: List players
+  /player/{name}:
+    get:
+      consumes:
+      - application/json
+      description: get specified player info
+      parameters:
+      - description: Player Name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/player.Player'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+      summary: Get player information by name
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"
