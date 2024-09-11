@@ -9,7 +9,7 @@ import { testUser } from '../types/user';
 const Sidebar: React.FC = () => {
   const { user, login, logout } = useUsercontext();
   return (
-    <div className="border-r-gray-2 bg-gray-1 dark:border-r-gray-2 dark:bg-dark-2 left-0 z-20 flex h-screen w-fit flex-col justify-between border-r py-2 transition-all duration-300 max-sm:hidden">
+    <div className="left-0 z-20 flex h-screen w-fit flex-col justify-between border-r border-r-gray-2 bg-gray-1 py-2 transition-all duration-300 dark:border-r-gray-2 dark:bg-dark-2 max-sm:hidden">
       <div>
         <Link to="/">
           <div className="flex h-16 w-full items-center justify-center py-3">
@@ -32,23 +32,23 @@ const Sidebar: React.FC = () => {
         />
       </div>
 
-      <div className="absolute right-0 top-60 flex flex-col gap-2">
+      <div className="absolute bottom-0 right-0 flex flex-col gap-2">
         <button
           onClick={() => login(testUser)}
-          className="bg-dark-3 text-light flex w-full items-center justify-center rounded-md px-2 py-1 text-sm font-semibold"
+          className="flex w-full items-center justify-center rounded-md bg-dark-3 px-2 py-1 text-sm font-semibold text-light"
         >
           Login Test
         </button>
         <button
           onClick={() => logout()}
-          className="bg-dark-3 text-light flex w-full items-center justify-center rounded-md px-2 py-1 text-sm font-semibold"
+          className="flex w-full items-center justify-center rounded-md bg-dark-3 px-2 py-1 text-sm font-semibold text-light"
         >
           LogOut Test
         </button>
       </div>
 
       <div className="bottom-0 flex w-full flex-col items-center justify-center gap-3 py-2 md:flex-row md:gap-4">
-        {user && <DarkModeButton size={24} />}
+        <DarkModeButton size={24} />
         {user && <SettingsButton size={24} />}
       </div>
     </div>

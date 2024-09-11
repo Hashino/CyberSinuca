@@ -10,7 +10,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ user }) => {
   return (
     user && (
       <div className="w-full px-4 pt-2">
-        <div className="flex h-fit w-full flex-col rounded-lg bg-gray-1 px-4 py-6 dark:bg-dark-2">
+        <div className="flex h-fit w-full flex-col rounded-lg bg-gray-1 px-4 py-6 shadow-md dark:bg-dark-2">
           <div className="flex h-full">
             <div className="ronded-sm flex h-40 w-40 flex-none items-center justify-center overflow-hidden rounded-md bg-gray-2 max-md:h-32 max-md:w-32 max-sm:h-24 max-sm:w-24">
               <img className="h-full w-full object-cover" src={user.imgUrl}></img>

@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { UserProvider } from './context/userContext';
 import Error from './pages/Error';
-import HistoryMatches from './pages/HistoryMatches';
+import History from './pages/History';
 import Home from './pages/Home';
 import Ranking from './pages/Ranking';
 import UserProfile from './pages/UserProfile';
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ranking" element={<Ranking />} />
-          <Route path="/matches" element={<HistoryMatches />} />
+          <Route path="/matches" element={<History />} />
           <Route path="/profile/:id" element={<UserProfile />} />
           <Route path="*" element={<Error />} />
         </Routes>

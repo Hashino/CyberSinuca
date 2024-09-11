@@ -8,10 +8,14 @@ import MatchInfoSelection from './MatchInfoSelection';
 import MatchResultSelection from './MatchResultSelection';
 import UserSelection from './UserSelection';
 import WinnerSelection from './WinnerSelection';
+import { useQuery } from '@tanstack/react-query';
+
+interface ResponseProps {
+  options: UserType[];
+}
 
 interface ModalProps {
   isOpen: boolean;
-  options: UserType[];
   onClose: () => void;
 }
 
@@ -22,7 +26,7 @@ interface SubmitProps {
   matchResult: number | null;
 }
 
-const RegisterMatchModal: React.FC<ModalProps> = ({ isOpen, options, onClose }) => {
+const RegisterMatchModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   const [selectedUser, setSelectedUser] = useState<UserType | null>(null);
   const [selectedWinner, setSelectedWinner] = useState<UserType | null>(null);
   const [matchType, setMatchType] = useState<number | null>(null);
@@ -35,7 +39,7 @@ const RegisterMatchModal: React.FC<ModalProps> = ({ isOpen, options, onClose }) 
       const newMatch: MatchType = {
         winner: selectedWinner,
         loser: selectedWinner === selectedUser ? user : selectedUser,
-        date: new Date(),
+        date: new Date().toDateString(),
         matchType: matchType,
         matchResult: matchResult,
       };
@@ -47,6 +51,16 @@ const RegisterMatchModal: React.FC<ModalProps> = ({ isOpen, options, onClose }) 
       onClose();
     }
   }
+
+  const { data: queryResponse } = useQuery<ResponseProps>({
+    queryKey: ['users'],
+    queryFn: async () => {
+      const response = await fetch('http://localhost:8888/users');
+      const data = await response.json();
+
+      return data;
+    },
+  });
 
   return (
     <Dialog
@@ -66,7 +80,7 @@ const RegisterMatchModal: React.FC<ModalProps> = ({ isOpen, options, onClose }) 
           <div className="flex flex-col gap-1 text-sm text-gray-3 dark:text-gray-1">
             <span>Selecione o Oponente:</span>
             <UserSelection
-              options={options}
+              options={queryResponse?.options}
               selectedUser={selectedUser}
               setSelectedUser={setSelectedUser}
               setSelectedWinner={setSelectedWinner}

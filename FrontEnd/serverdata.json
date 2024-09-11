@@ -1,0 +1,702 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "luanoliveira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Luan Oliveira"
+    },
+    {
+      "id": 2,
+      "username": "marianacosta",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1020,
+      "defeats": 2,
+      "victories": 8,
+      "name": "Mariana Costa"
+    },
+    {
+      "id": 3,
+      "username": "pedrohenrique",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1100,
+      "defeats": 1,
+      "victories": 9,
+      "name": "Pedro Henrique"
+    },
+    {
+      "id": 4,
+      "username": "camilaalmeida",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 950,
+      "defeats": 4,
+      "victories": 6,
+      "name": "Camila Almeida"
+    },
+    {
+      "id": 5,
+      "username": "natandsj",
+      "imgUrl": "/images/profilePicSample.jpg",
+      "rating": 950,
+      "defeats": 2,
+      "victories": 3,
+      "name": "Natanael dos Santos Júnior"
+    },
+    {
+      "id": 6,
+      "username": "juliocesario",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Julio Cesário"
+    },
+    {
+      "id": 7,
+      "username": "pauloribeiro",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1000,
+      "defeats": 2,
+      "victories": 5,
+      "name": "Paulo Ribeiro"
+    },
+    {
+      "id": 8,
+      "username": "amandasilva",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1070,
+      "defeats": 1,
+      "victories": 6,
+      "name": "Amanda Silva"
+    },
+    {
+      "id": 9,
+      "username": "joaopaulo",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 940,
+      "defeats": 5,
+      "victories": 4,
+      "name": "João Paulo"
+    },
+    {
+      "id": 10,
+      "username": "carolmarques",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Carol Marques"
+    },
+    {
+      "id": 11,
+      "username": "felipepereira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1100,
+      "defeats": 2,
+      "victories": 8,
+      "name": "Felipe Pereira"
+    },
+    {
+      "id": 12,
+      "username": "gabriele",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 940,
+      "defeats": 4,
+      "victories": 5,
+      "name": "Gabriele Martins"
+    },
+    {
+      "id": 13,
+      "username": "andrefernandes",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 960,
+      "defeats": 3,
+      "victories": 6,
+      "name": "André Fernandes"
+    },
+    {
+      "id": 14,
+      "username": "laurasilva",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1080,
+      "defeats": 2,
+      "victories": 7,
+      "name": "Laura Silva"
+    },
+    {
+      "id": 15,
+      "username": "victorhugo",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 4,
+      "victories": 5,
+      "name": "Victor Hugo"
+    },
+    {
+      "id": 16,
+      "username": "leticiaoliveira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1000,
+      "defeats": 1,
+      "victories": 6,
+      "name": "Letícia Oliveira"
+    },
+    {
+      "id": 17,
+      "username": "brunomartins",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 970,
+      "defeats": 2,
+      "victories": 7,
+      "name": "Bruno Martins"
+    },
+    {
+      "id": 18,
+      "username": "elena",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 990,
+      "defeats": 3,
+      "victories": 6,
+      "name": "Elena Castro"
+    },
+    {
+      "id": 19,
+      "username": "rodrigoalves",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1050,
+      "defeats": 2,
+      "victories": 8,
+      "name": "Rodrigo Alves"
+    },
+    {
+      "id": 20,
+      "username": "ines",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 950,
+      "defeats": 5,
+      "victories": 4,
+      "name": "Inês Oliveira"
+    },
+    {
+      "id": 21,
+      "username": "tatianeribeiro",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1030,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Tatiane Ribeiro"
+    },
+    {
+      "id": 22,
+      "username": "joanapereira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 970,
+      "defeats": 4,
+      "victories": 6,
+      "name": "Joana Pereira"
+    },
+    {
+      "id": 23,
+      "username": "ricardosilva",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 990,
+      "defeats": 2,
+      "victories": 9,
+      "name": "Ricardo Silva"
+    }
+  ],
+
+  "usersByRating": [
+    {
+      "id": 3,
+      "username": "pedrohenrique",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1100,
+      "defeats": 1,
+      "victories": 9,
+      "name": "Pedro Henrique",
+      "position": 1
+    },
+    {
+      "id": 11,
+      "username": "felipepereira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1100,
+      "defeats": 2,
+      "victories": 8,
+      "name": "Felipe Pereira",
+      "position": 2
+    },
+    {
+      "id": 14,
+      "username": "laurasilva",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1080,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Laura Silva",
+      "position": 3
+    },
+    {
+      "id": 19,
+      "username": "rodrigoalves",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1050,
+      "defeats": 2,
+      "victories": 8,
+      "name": "Rodrigo Alves",
+      "position": 4
+    },
+    {
+      "id": 8,
+      "username": "amandasilva",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1070,
+      "defeats": 1,
+      "victories": 6,
+      "name": "Amanda Silva",
+      "position": 5
+    },
+    {
+      "id": 21,
+      "username": "tatianeribeiro",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1030,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Tatiane Ribeiro",
+      "position": 6
+    },
+    {
+      "id": 16,
+      "username": "leticiaoliveira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 1000,
+      "defeats": 1,
+      "victories": 6,
+      "name": "Letícia Oliveira",
+      "position": 7
+    },
+    {
+      "id": 17,
+      "username": "brunomartins",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 970,
+      "defeats": 2,
+      "victories": 7,
+      "name": "Bruno Martins",
+      "position": 8
+    },
+    {
+      "id": 23,
+      "username": "ricardosilva",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 990,
+      "defeats": 2,
+      "victories": 9,
+      "name": "Ricardo Silva",
+      "position": 9
+    },
+    {
+      "id": 10,
+      "username": "carolmarques",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Carol Marques",
+      "position": 10
+    },
+    {
+      "id": 6,
+      "username": "juliocesario",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 3,
+      "victories": 7,
+      "name": "Julio Cesário",
+      "position": 11
+    },
+    {
+      "id": 15,
+      "username": "victorhugo",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 980,
+      "defeats": 4,
+      "victories": 5,
+      "name": "Victor Hugo",
+      "position": 12
+    },
+    {
+      "id": 5,
+      "username": "natandsj",
+      "imgUrl": "/images/profilePicSample.jpg",
+      "rating": 950,
+      "defeats": 2,
+      "victories": 3,
+      "name": "Natanael dos Santos Júnior",
+      "position": 13
+    },
+    {
+      "id": 13,
+      "username": "andrefernandes",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 960,
+      "defeats": 3,
+      "victories": 6,
+      "name": "André Fernandes",
+      "position": 14
+    },
+    {
+      "id": 4,
+      "username": "camilaalmeida",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 950,
+      "defeats": 4,
+      "victories": 6,
+      "name": "Camila Almeida",
+      "position": 15
+    },
+    {
+      "id": 9,
+      "username": "joaopaulo",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 940,
+      "defeats": 5,
+      "victories": 4,
+      "name": "João Paulo",
+      "position": 16
+    },
+    {
+      "id": 12,
+      "username": "gabriele",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 940,
+      "defeats": 4,
+      "victories": 5,
+      "name": "Gabriele Martins",
+      "position": 17
+    },
+    {
+      "id": 22,
+      "username": "joanapereira",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 970,
+      "defeats": 4,
+      "victories": 6,
+      "name": "Joana Pereira",
+      "position": 18
+    },
+    {
+      "id": 7,
+      "username": "pauloribeiro",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 950,
+      "defeats": 5,
+      "victories": 4,
+      "name": "Paulo Ribeiro",
+      "position": 19
+    },
+    {
+      "id": 20,
+      "username": "ines",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 930,
+      "defeats": 6,
+      "victories": 3,
+      "name": "Inês Martins",
+      "position": 20
+    },
+    {
+      "id": 18,
+      "username": "elena",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 920,
+      "defeats": 5,
+      "victories": 4,
+      "name": "Elena Silva",
+      "position": 21
+    },
+    {
+      "id": 2,
+      "username": "luisfelipe",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 910,
+      "defeats": 5,
+      "victories": 3,
+      "name": "Luis Felipe",
+      "position": 22
+    },
+    {
+      "id": 1,
+      "username": "marcelo",
+      "imgUrl": "/images/profilePicSample2.png",
+      "rating": 900,
+      "defeats": 6,
+      "victories": 3,
+      "name": "Marcelo Costa",
+      "position": 23
+    }
+  ],
+
+  "matches": [
+    {
+      "winner": {
+        "id": 11,
+        "username": "felipepereira",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1100
+      },
+      "loser": {
+        "id": 22,
+        "username": "joanapereira",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 970
+      },
+      "date": "2024-09-21T11:15:00Z",
+      "matchType": 3,
+      "matchResult": 2
+    },
+    {
+      "winner": {
+        "id": 3,
+        "username": "pedrohenrique",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1100
+      },
+      "loser": {
+        "id": 16,
+        "username": "leticiaoliveira",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1000
+      },
+      "date": "2024-09-12T16:00:00Z",
+      "matchType": 1,
+      "matchResult": 0
+    },
+    {
+      "winner": {
+        "id": 8,
+        "username": "amandasilva",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1070
+      },
+      "loser": {
+        "id": 19,
+        "username": "rodrigoalves",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1050
+      },
+      "date": "2024-09-15T14:30:00Z",
+      "matchType": 5,
+      "matchResult": 4
+    },
+    {
+      "winner": {
+        "id": 15,
+        "username": "victorhugo",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 980
+      },
+      "loser": {
+        "id": 13,
+        "username": "andrefernandes",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 960
+      },
+      "date": "2024-09-10T09:00:00Z",
+      "matchType": 3,
+      "matchResult": 2
+    },
+    {
+      "winner": {
+        "id": 14,
+        "username": "laurasilva",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1080
+      },
+      "loser": {
+        "id": 5,
+        "username": "natandsj",
+        "imgUrl": "/images/profilePicSample.jpg",
+        "rating": 950
+      },
+      "date": "2024-09-14T20:45:00Z",
+      "matchType": 1,
+      "matchResult": 0
+    },
+    {
+      "winner": {
+        "id": 10,
+        "username": "carolmarques",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 980
+      },
+      "loser": {
+        "id": 18,
+        "username": "elena",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 920
+      },
+      "date": "2024-09-18T13:00:00Z",
+      "matchType": 5,
+      "matchResult": 3
+    },
+    {
+      "winner": {
+        "id": 17,
+        "username": "brunomartins",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 970
+      },
+      "loser": {
+        "id": 12,
+        "username": "gabriele",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 940
+      },
+      "date": "2024-09-16T19:30:00Z",
+      "matchType": 3,
+      "matchResult": 2
+    },
+    {
+      "winner": {
+        "id": 1,
+        "username": "marcelo",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 900
+      },
+      "loser": {
+        "id": 9,
+        "username": "joaopaulo",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 940
+      },
+      "date": "2024-09-11T15:45:00Z",
+      "matchType": 1,
+      "matchResult": 0
+    },
+    {
+      "winner": {
+        "id": 22,
+        "username": "joanapereira",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 970
+      },
+      "loser": {
+        "id": 4,
+        "username": "camilaalmeida",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 950
+      },
+      "date": "2024-09-22T12:30:00Z",
+      "matchType": 3,
+      "matchResult": 1
+    },
+    {
+      "winner": {
+        "id": 13,
+        "username": "andrefernandes",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 960
+      },
+      "loser": {
+        "id": 20,
+        "username": "ines",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 930
+      },
+      "date": "2024-09-19T10:00:00Z",
+      "matchType": 1,
+      "matchResult": 0
+    },
+    {
+      "winner": {
+        "id": 6,
+        "username": "juliocesario",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 980
+      },
+      "loser": {
+        "id": 7,
+        "username": "pauloribeiro",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 950
+      },
+      "date": "2024-09-13T17:15:00Z",
+      "matchType": 1,
+      "matchResult": 1
+    },
+    {
+      "winner": {
+        "id": 5,
+        "username": "natandsj",
+        "imgUrl": "/images/profilePicSample.jpg",
+        "rating": 950
+      },
+      "loser": {
+        "id": 17,
+        "username": "brunomartins",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 970
+      },
+      "date": "2024-09-08T14:00:00Z",
+      "matchType": 3,
+      "matchResult": 1
+    },
+    {
+      "winner": {
+        "id": 7,
+        "username": "pauloribeiro",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 950
+      },
+      "loser": {
+        "id": 16,
+        "username": "leticiaoliveira",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1000
+      },
+      "date": "2024-09-23T11:45:00Z",
+      "matchType": 1,
+      "matchResult": 0
+    },
+    {
+      "winner": {
+        "id": 12,
+        "username": "gabriele",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 940
+      },
+      "loser": {
+        "id": 8,
+        "username": "amandasilva",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1070
+      },
+      "date": "2024-09-17T18:00:00Z",
+      "matchType": 5,
+      "matchResult": 2
+    },
+    {
+      "winner": {
+        "id": 14,
+        "username": "laurasilva",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 1080
+      },
+      "loser": {
+        "id": 15,
+        "username": "victorhugo",
+        "imgUrl": "/images/profilePicSample2.png",
+        "rating": 980
+      },
+      "date": "2024-09-20T13:30:00Z",
+      "matchType": 3,
+      "matchResult": 1
+    }
+  ]
+}

@@ -9,7 +9,7 @@ const matches = [testMatch, testMatch, testMatch, testMatch];
 const UserProfile: React.FC = () => {
   const { user } = useUsercontext();
   return (
-    <BasicLayout authenticated={false}>
+    <BasicLayout>
       <ProfileCard user={user} />
       <ProfileHistoryCard owner={user} matches={matches} />
     </BasicLayout>
