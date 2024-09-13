@@ -5,7 +5,7 @@ import { Minus, Plus, ChevronRight } from 'lucide-react';
 
 interface ProfileHistoryCardProps {
   matches: MatchType[];
-  owner: UserType | null;
+  owner: UserType | undefined;
 }
 
 const ProfileHistoryCard: React.FC<ProfileHistoryCardProps> = ({ matches, owner }) => {
@@ -68,11 +68,11 @@ const ProfileHistoryCard: React.FC<ProfileHistoryCardProps> = ({ matches, owner 
                     </div>
                   </td>
                   <td className="px-4 py-2">
-                    {/* <span>
-                      {match.date.getDate().toString().padStart(2, '0')}/
-                      {(match.date.getUTCMonth() + 1).toString().padStart(2, '0')}/
-                      {match.date.getFullYear()}
-                    </span> */}
+                    <span>
+                      {new Date(match.date).getDate().toString().padStart(2, '0')}/
+                      {(new Date(match.date).getMonth() + 1).toString().padStart(2, '0')}/
+                      {new Date(match.date).getFullYear().toString().padStart(2, '0')}
+                    </span>
                   </td>
                 </tr>
               ))}

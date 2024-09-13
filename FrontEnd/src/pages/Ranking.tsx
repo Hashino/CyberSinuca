@@ -7,11 +7,12 @@ import { useState, useEffect } from 'react';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { useSearchParams } from 'react-router-dom';
 import Pagination from '../components/tables/Pagination';
+import React from 'react';
 
 interface ResponseProps {
   first: number;
-  prev: any;
-  next: number;
+  prev: number | null;
+  next: number | null;
   last: number;
   pages: number;
   items: number;

@@ -6,6 +6,8 @@ interface HistoryContentProps {
 }
 
 const HistoryContent: React.FC<HistoryContentProps> = ({ match }) => {
+  const date = new Date(match.date);
+
   return (
     <div className="flex w-full items-center gap-2 border-b border-gray-2 bg-gray-1 px-2 py-2 text-gray-3 dark:bg-dark-2 dark:text-gray-1">
       <div className="flex w-full items-center gap-2">

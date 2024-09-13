@@ -1,5 +1,5 @@
 import { Moon, Sun } from 'lucide-react';
-import { useEffect, useState, SVGProps, ForwardRefExoticComponent} from 'react';
+import { useEffect, useState, SVGProps, ForwardRefExoticComponent } from 'react';
 
 interface IconProps extends SVGProps<SVGSVGElement> {
   size?: number | string; // Ajuste conforme necessário
@@ -27,7 +27,7 @@ const DarkModeButton: React.FC<Props> = ({ size }) => {
     document.documentElement.classList.toggle('dark', !darkMode);
   };
 
-const Icon : ForwardRefExoticComponent<IconProps> = darkMode ? Moon : Sun;
+  const Icon: ForwardRefExoticComponent<IconProps> = darkMode ? Moon : Sun;
   return (
     <button onClick={toggleDarkMode}>
       <div className="flex justify-center text-gray-3 transition hover:text-dark-2 dark:text-gray-1 dark:hover:text-light">

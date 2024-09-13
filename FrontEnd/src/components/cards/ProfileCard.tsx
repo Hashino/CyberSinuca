@@ -3,7 +3,7 @@ import { testMatch } from '../../types/match';
 import ProfileCardContent from './ProfileCardContent';
 
 interface ProfileCardProps {
-  user: UserType | null;
+  user: UserType | undefined;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ user }) => {
