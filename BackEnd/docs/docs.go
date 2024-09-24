@@ -15,7 +15,7 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/history": {
+        "/api/history": {
             "get": {
                 "description": "get all players history",
                 "consumes": [
@@ -38,7 +38,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/history/{name}": {
+        "/api/history/{name}": {
             "get": {
                 "description": "get specified player history",
                 "consumes": [
@@ -76,7 +76,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/player": {
+        "/api/player": {
             "get": {
                 "description": "get players",
                 "consumes": [
@@ -99,7 +99,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/player/{name}": {
+        "/api/player/{username}": {
             "get": {
                 "description": "get specified player info",
                 "consumes": [
@@ -142,10 +142,16 @@ const docTemplate = `{
         "match.Match": {
             "type": "object",
             "properties": {
-                "loserId": {
+                "bool": {
+                    "type": "boolean"
+                },
+                "id": {
                     "type": "integer"
                 },
-                "winnerId": {
+                "player1_id": {
+                    "type": "integer"
+                },
+                "player2_id": {
                     "type": "integer"
                 }
             }
@@ -153,19 +159,25 @@ const docTemplate = `{
         "player.Player": {
             "type": "object",
             "properties": {
+                "created_at": {
+                    "type": "integer"
+                },
+                "display_name": {
+                    "type": "string"
+                },
                 "elo": {
                     "type": "integer"
                 },
-                "id": {
-                    "type": "integer"
-                },
-                "matches": {
+                "history": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/match.Match"
                     }
                 },
-                "name": {
+                "id": {
+                    "type": "integer"
+                },
+                "username": {
                     "type": "string"
                 }
             }

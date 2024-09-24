@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"cybersinuca/api/docs"
-	"cybersinuca/api/model/match"
-	"cybersinuca/api/model/player"
+	"cybersinuca/api/src/match"
+	"cybersinuca/api/src/player"
 
 	"github.com/swaggo/files"
 	"github.com/swaggo/gin-swagger"
@@ -15,20 +15,22 @@ import (
 
 
 var matches = []match.Match{
-	{WinnerID: 1, LoserID: 2},
-	{WinnerID: 2, LoserID: 3},
-	{WinnerID: 3, LoserID: 1},
+	{ ID: 1,  Player1: 1, Player2: 1, Winner: true },
+	{ ID: 3,  Player1: 2, Player2: 2, Winner: true },
+	{ ID: 4,  Player1: 1, Player2: 3, Winner: false },
+	{ ID: 5,  Player1: 2, Player2: 1, Winner: true },
+	{ ID: 6,  Player1: 3, Player2: 2, Winner: false },
 }
 
-// getAllPlayersHistory get the history of all players
+// getGeneralHistory get the history of all players
 //
 //	@Summary		Get all players history
 //	@Description	get all players history
 //	@Accept			json
 //	@Produce		json
 //	@Success		200		{array}		match.Match[]
-//	@Router			/history [get]
-func getAllPlayersHistory(context *gin.Context) {
+//	@Router			/api/history [get]
+func getGeneralHistory(context *gin.Context) {
 	context.IndentedJSON(http.StatusOK, matches)
 }
 
@@ -39,7 +41,7 @@ func getAllPlayersHistory(context *gin.Context) {
 //	@Accept			json
 //	@Produce		json
 //	@Success		200	{array}	player.Player
-//	@Router			/player [get]
+//	@Router			/api/player [get]
 func getAllPlayersInfo(context *gin.Context) {
 	context.IndentedJSON(http.StatusOK, player.Players)
 }
@@ -53,12 +55,12 @@ func getAllPlayersInfo(context *gin.Context) {
 //	@Param			name	path		string	true	"Player Name"
 //	@Success		200		{array}		player.Player
 //	@Failure		400		{object}	string
-//	@Router			/player/{name} [get]
+//	@Router			/api/player/{username} [get]
 func getPlayerInfo(context *gin.Context) {
-	var name = context.Param("name")
+	var name = context.Param("username")
 
 	for _, p := range player.Players {
-		if p.Name == name {
+		if p.DisplayName == name {
 			context.IndentedJSON(http.StatusOK, p)
 			return
 		}
@@ -76,15 +78,15 @@ func getPlayerInfo(context *gin.Context) {
 //	@Param			name	path		string	true	"Player Name"
 //	@Success		200		{array}		match.Match[]
 //	@Failure		400		{object}	string
-//	@Router			/history/{name} [get]
+//	@Router			/api/history/{name} [get]
 func getPlayerHistory(context *gin.Context) {
-	var player, res = player.GetPlayerByName(context.Param("name"))
+	var player, res = player.GetPlayerByUsername(context.Param("name"))
 
 	if res == nil {
 		var playerMatches []match.Match
 
 		for _, m := range matches {
-			if m.LoserID == player.ID || m.WinnerID == player.ID {
+			if m.Player1 == player.ID || m.Player2 == player.ID {
 				playerMatches = append(playerMatches, m)
 			}
 		}
@@ -117,10 +119,10 @@ func main() {
 
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
-	router.GET("/history", getAllPlayersHistory)
-	router.GET("/history/:name", getPlayerHistory)
-	router.GET("/player", getAllPlayersInfo)
-	router.GET("/player/:name", getPlayerInfo)
+	router.GET("/api/history", getGeneralHistory)
+	router.GET("/api/history/:username", getPlayerHistory)
+	router.GET("/api/player", getAllPlayersInfo)
+	router.GET("/api/player/:username", getPlayerInfo)
 
 	router.Run("localhost:6969")
 }

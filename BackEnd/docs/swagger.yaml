@@ -1,22 +1,30 @@
 definitions:
   match.Match:
     properties:
-      loserId:
+      bool:
+        type: boolean
+      id:
         type: integer
-      winnerId:
+      player1_id:
+        type: integer
+      player2_id:
         type: integer
     type: object
   player.Player:
     properties:
+      created_at:
+        type: integer
+      display_name:
+        type: string
       elo:
         type: integer
-      id:
-        type: integer
-      matches:
+      history:
         items:
           $ref: '#/definitions/match.Match'
         type: array
-      name:
+      id:
+        type: integer
+      username:
         type: string
     type: object
 externalDocs:
@@ -28,7 +36,7 @@ info:
   title: CyberSinuca API
   version: 0.0.1
 paths:
-  /history:
+  /api/history:
     get:
       consumes:
       - application/json
@@ -43,7 +51,7 @@ paths:
               $ref: '#/definitions/match.Match'
             type: array
       summary: Get all players history
-  /history/{name}:
+  /api/history/{name}:
     get:
       consumes:
       - application/json
@@ -68,7 +76,7 @@ paths:
           schema:
             type: string
       summary: Get player history by name
-  /player:
+  /api/player:
     get:
       consumes:
       - application/json
@@ -83,7 +91,7 @@ paths:
               $ref: '#/definitions/player.Player'
             type: array
       summary: List players
-  /player/{name}:
+  /api/player/{username}:
     get:
       consumes:
       - application/json
